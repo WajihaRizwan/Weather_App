@@ -79,8 +79,8 @@ class _Weather3State extends State<Weather3> {
           Row(
             children: [
               Container(
-                margin: EdgeInsets.only(left: 10),
-                padding: EdgeInsets.only(left: 10,top: 10,bottom: 10),
+                margin: const EdgeInsets.only(left: 10),
+                padding: const EdgeInsets.only(left: 10,top: 10,bottom: 10),
                 width: 290,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20)
@@ -90,7 +90,7 @@ class _Weather3State extends State<Weather3> {
                   decoration: InputDecoration(
                   
                     hintText: 'Search for a city or an airport',
-                    hintStyle: TextStyle(fontSize: 16),
+                    hintStyle: const TextStyle(fontSize: 16),
                     filled: true,
                     fillColor: Colors.black,
                     border: OutlineInputBorder(
@@ -102,7 +102,7 @@ class _Weather3State extends State<Weather3> {
                   style: const TextStyle(color: Colors.white),
                 ),
               ),
-              SizedBox(width: 25,),
+              const SizedBox(width: 25,),
               ElevatedButton(
                 onPressed: () {
                   setState(() {
